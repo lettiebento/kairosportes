@@ -1,305 +1,125 @@
-/* Reset básico */
+/* RESET BÁSICO */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
-    color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #333;
 }
 
-/* Menu de navegação */
+/* ========== CABEÇALHO E MENU ========== */
 header {
-    background-color: #222;
-    padding: 15px 0;
+  background-color: #222;
+  padding: 15px 0;
 }
 
-.menu ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .menu a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .menu a:hover {
-    color: #f0a500;
+  color: #f0a500;
 }
 
-/* Banner (estilo original preservado) */
-.banner {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f2f2f2;
-}
-
-.banner img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.banner-texto {
-    margin-top: 20px;
-}
-
-.banner h2,
-.banner p {
-    margin: 10px 0;
-}
-
-/* Sessão de esportes */
-.esportes {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.esportes h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-}
-
-.esportes-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.esportes-grid a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    width: 320px;
-    transition: transform 0.3s ease;
-}
-
-.esportes-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.esportes-grid a:hover img {
-    transform: scale(1.05);
-}
-
-.esportes-grid a span {
-    margin-top: 15px;
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    color: #222;
-}
-
-/* Sobre a empresa */
-
+/* ========== PÁGINA QUEM SOMOS ========== */
 .quem-somos {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .inspiracao {
-    text-align: center;
-    margin-bottom: 60px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .imagem-destaque {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 15px;
-    display: block;
-    margin: 0 auto 30px;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto 30px;
 }
 
 .inspiracao h3 {
-    margin-top: 20px;
-    font-size: 22px;
-    font-weight: bold;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .inspiracao p {
-    margin: 10px 0;
-    font-size: 16px;
-    line-height: 1.6;
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .botao {
-    display: inline-block;
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    margin-top: 15px;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .botao:hover {
-    background-color: #f0a500;
+  background-color: #f0a500;
 }
 
 .historias h2 {
-    text-align: left;
-    font-size: 24px;
-    margin-bottom: 20px;
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .grid-historias {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .card {
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    text-align: center;
-    padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 15px;
 }
 
 .card h4 {
-    margin: 10px 0 5px;
-    font-size: 18px;
-    color: #222;
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #222;
 }
 
 .card p {
-    font-size: 14px;
-    color: #555;
+  font-size: 14px;
+  color: #555;
 }
 
-/* Banner Trabalhe Conosco */
-.trabalhe-banner img {
-    width: 90%;
-    max-width: 1200px;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-    margin: 40px auto;
-    border-radius: 20px;
-}
-
-/* Introdução com imagem e texto */
-.intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 10%;
-    gap: 20px;
-    background-color: #fff;
-    color: #333;
-}
-
-.imagem-esporte {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 12px;
-}
-
-.texto-intro h3 {
-    font-size: 28px;
-    color: #002b5c;
-    margin-bottom: 15px;
-}
-
-.texto-intro p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-/* Seção de valores */
-.valores .esportes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    padding: 40px 10%;
-}
-
-.valores .card {
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ddd;
-    transition: box-shadow 0.3s ease;
-}
-
-.valores .card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.valores .card img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-.valores .card h3 {
-    color: #004080;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.valores .card p {
-    font-size: 14px;
-    color: #555;
-}
-
-/* Texto final */
-.texto-final {
-    padding: 0 10% 40px;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Seção de setores */
-.esportes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    padding: 0 10% 40px;
-}
-
-.card img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-}
-
-.card h3 {
-    font-size: 18px;
-    color: #002b5c;
-}
-
-/* Rodapé */
+/* ========== RODAPÉ ========== */
 footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
 }
