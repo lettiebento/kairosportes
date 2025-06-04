@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kairo Sportes</title>
+  <title>Destaques - Kairo Sportes</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="container">
-      <ul class="menu">
+    <div class="layout-container">
+      <!-- Menu de navegação principal -->
+      <ul class="nav-menu">
         <li><a href="index.html">Início</a></li>
         <li><a href="produtos.html">Portfólio</a></li>
         <li><a href="quemsomos.html">Quem Somos</a></li>
@@ -19,37 +20,39 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="banner">
-      <img src="banner5.png" alt="Banner Destaques" class="img-banner">
-    </section>
+  <main class="pagina-conteudo">
+    <!-- Seção de destaques especiais -->
+    <section class="secao-destaque">
+      <h2>Destaques do Mês</h2>
+      <p>Selecionamos os produtos mais procurados e bem avaliados pelos nossos clientes. Confira os campeões de vendas!</p>
 
-    <section>
-      <h2>Destaques da Semana</h2>
-      <p>Conheça os produtos mais vendidos e os favoritos dos nossos clientes nesta semana.</p>
-      <div class="destaques">
-        <div class="produto"><img src="halter.png" alt="Halter" class="img-arredondada"><p>Halter de Borracha</p></div>
-        <div class="produto"><img src="corda.png" alt="Corda" class="img-arredondada"><p>Corda Funcional</p></div>
-        <div class="produto"><img src="esteira.png" alt="Esteira" class="img-arredondada"><p>Esteira Elétrica</p></div>
+      <div class="grid-cards">
+        <!-- Destaque 1 -->
+        <div class="info-card">
+          <img src="imagem/destaques/destaque1.jpg" alt="Destaque 1" class="imagem-banner">
+          <h4>Conjunto Esportivo Premium</h4>
+          <p>Conforto máximo para treinos e competições.</p>
+        </div>
+
+        <!-- Destaque 2 -->
+        <div class="info-card">
+          <img src="imagem/destaques/destaque2.jpg" alt="Destaque 2" class="imagem-banner">
+          <h4>Mochila Multiuso</h4>
+          <p>Ideal para carregar seus equipamentos com estilo.</p>
+        </div>
+
+        <!-- Destaque 3 -->
+        <div class="info-card">
+          <img src="imagem/destaques/destaque3.jpg" alt="Destaque 3" class="imagem-banner">
+          <h4>Suplementos Esportivos</h4>
+          <p>Alcance sua melhor performance com suporte nutricional.</p>
+        </div>
       </div>
-    </section>
-
-    <section>
-      <h3>Top avaliações</h3>
-      <p>Veja o que nossos clientes dizem sobre os produtos:</p>
-      <ul>
-        <li>“Melhor custo-benefício em equipamentos!” – João F.</li>
-        <li>“Atendimento excelente e entrega rápida.” – Ana C.</li>
-        <li>“Produtos com ótima durabilidade.” – Marcos L.</li>
-      </ul>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      Desenvolvido por Letícia Bento | Engenharia de Software - UTFPR
-    </div>
+    <p>Desenvolvido por Letícia Bento - Kairo Sportes &copy; 2025</p>
   </footer>
 </body>
 </html>
-
