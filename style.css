@@ -11,43 +11,52 @@ body {
   color: #333;
 }
 
-/* ========== CABEÇALHO E MENU ========== */
+/* ========== CABEÇALHO ========== */
 header {
   background-color: #222;
   padding: 15px 0;
 }
 
-.menu {
+/* Container genérico para layout */
+.layout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Menu de navegação */
+.nav-menu {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.menu a {
+.nav-menu a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
 }
 
-.menu a:hover {
+.nav-menu a:hover {
   color: #f0a500;
 }
 
-/* ========== PÁGINA QUEM SOMOS ========== */
-.quem-somos {
+/* ========== CONTEÚDO PRINCIPAL ========== */
+.pagina-conteudo {
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.inspiracao {
+/* Seções com destaque de imagem e título */
+.secao-destaque {
   text-align: center;
   margin-bottom: 60px;
 }
 
-.imagem-destaque {
+.imagem-banner {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
@@ -56,19 +65,20 @@ header {
   margin: 0 auto 30px;
 }
 
-.inspiracao h3 {
+.secao-destaque h3 {
   margin-top: 20px;
   font-size: 22px;
   font-weight: bold;
 }
 
-.inspiracao p {
+.secao-destaque p {
   margin: 10px 0;
   font-size: 16px;
   line-height: 1.6;
 }
 
-.botao {
+/* Botão de chamada para ação */
+.link-botao {
   display: inline-block;
   background-color: #000;
   color: #fff;
@@ -79,23 +89,18 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.botao:hover {
+.link-botao:hover {
   background-color: #f0a500;
 }
 
-.historias h2 {
-  text-align: left;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.grid-historias {
+/* ========== SEÇÃO DE INFORMAÇÕES EM GRADE ========== */
+.grid-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
-.card {
+.info-card {
   background-color: #f9f9f9;
   border-radius: 12px;
   overflow: hidden;
@@ -104,13 +109,13 @@ header {
   padding: 15px;
 }
 
-.card h4 {
+.info-card h4 {
   margin: 10px 0 5px;
   font-size: 18px;
   color: #222;
 }
 
-.card p {
+.info-card p {
   font-size: 14px;
   color: #555;
 }
